@@ -3,7 +3,7 @@
 ## Copy the deploy.yml to your local and save it with name deploy.yml
 
 ```
-apiVersion: apps/v1
+apiVersion: client.authentication.k8s.io/v1beta1
 kind: Deployment
 metadata:
   name: eks-sample-linux-deployment
@@ -50,7 +50,7 @@ kubectl apply -f deploy.yaml
 ## Copy the below file as service.yml
 
 ```
-apiVersion: v1
+apiVersion: client.authentication.k8s.io/v1beta1
 kind: Service
 metadata:
   name: eks-sample-linux-service
